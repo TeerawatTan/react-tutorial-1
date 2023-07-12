@@ -1,22 +1,16 @@
-import '../components/transaction.css'
+import './transaction.css'
 import Item from './item';
-
 
 function Transaction(props) {
 
-    const { data } = props
-    console.log(data);
+    const {list} = props
 
     return (
-        <div>
-            <ul> บัญชีรายรับ - รายจ่าย
-               {
-                data.map((data, index) => {
-                    return <Item items={data}/>
-                })
-               }
-            </ul>
-        </div>
+        <ul className='item-list'>
+            {list.map((element) => {
+                return <Item {...element} key={element.id} />
+            })}
+        </ul>
     )
 }
 

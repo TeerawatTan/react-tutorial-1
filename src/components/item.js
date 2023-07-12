@@ -1,11 +1,17 @@
-export default function Item(props){
+import PropTypes from 'prop-types';
 
-    const {items} = props;
+const Item = (props) => {
 
+    const {id,title,amount} = props;
 
     return (
-        <div>
-            <li>{items.title}-{items.name} {items.lastname}</li>
-        </div>
+        <li key={id}>{title}<span>{amount}</span></li>
     )
 }
+
+Item.propTypes = {
+    title: PropTypes.string.isRequired,
+    amount: PropTypes.number.isRequired
+}
+
+export default Item

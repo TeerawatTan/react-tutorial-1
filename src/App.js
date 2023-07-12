@@ -1,32 +1,29 @@
-import { useState } from "react"
 import './App.css';
+import Title from './components/Title';
 import FormComponent from './components/Form';
+import Detail from "./components/Detail";
 import Transaction from './components/transaction';
+import { useState } from 'react';
 
 function App() {
 
-  const list = [
-    {
-      title: "ค่าขนม",
-      price: Number(500)
-    }
-  ]
+const [initItem,setInitItem] = useState([])
 
-  const [items,setItems] = useState(list)
+  const onAddNewItem = (newItem) => {
 
-  const onAddItem = (newItem) => {
+    console.log("ข้อมูลจาก Form ", newItem)
 
-    console.log("ข้อมูลจาก Form "+newItem)
-
-    setItems((prevItem) => {
+    setInitItem((prevItem) => {
       return [...prevItem, newItem]
     })
   }
 
   return (
-    <div className="App">
-      <FormComponent onAddData={onAddItem}/>
-      <Transaction data={items}/>
+    <div className="container">
+      <Title />
+      <FormComponent onAddItem={onAddNewItem}/>
+      <Detail />
+      <Transaction list={initItem}/>
     </div>
   );
 }
