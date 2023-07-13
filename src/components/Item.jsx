@@ -11,7 +11,7 @@ const Item = (props) => {
 
 Item.propTypes = {
     title: PropTypes.string.isRequired,
-    amount: PropTypes.number.isRequired
+    last_name: PropTypes.number.isRequired
 }
 
 export default Item
