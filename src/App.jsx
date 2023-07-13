@@ -11,8 +11,6 @@ function App() {
 
   const onAddNewItem = (newItem) => {
 
-    console.log("ข้อมูลจาก Form ", newItem)
-
     setInitItem((prevItem) => {
       return [...prevItem, newItem]
     })
