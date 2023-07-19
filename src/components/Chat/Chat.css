@@ -1,0 +1,157 @@
+h2 {
+    color: #51c2d5;
+    text-align: center;
+}
+
+h6 {
+    color: greenyellow;
+    text-align: center;
+}
+
+hr.line {
+    border: 1px solid #51c2d5;
+    width: 175px;
+}
+
+.chat-container {
+    margin: 30px auto;
+    width: 100%;
+}
+
+.lobby-container {
+    margin: 30px 0;
+    width: 350px;
+}
+
+input {
+    margin: 10px 0;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btn-save {
+    background-color: #c8ead1;
+    color: #000;
+    cursor: pointer;
+    margin: 10px 0 30px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-save:disabled {
+    background-color: #fff;
+    color: gray;
+}
+
+h4 {
+    text-align: center;
+}
+
+hr.under-connected-user-line {
+    border: 1px solid #fff;
+    width: 175px;
+}
+
+.lobby {
+    width: 400px;
+    margin: auto;
+}
+
+.room-container {
+    margin-left: -10rem;
+    width: 550px;
+}
+
+.chat {
+    display: grid;
+}
+
+.leave-room {
+    text-align: right;
+    margin-bottom: 4px;
+}
+
+.user-list {
+    float: left;
+    background-color: #313131;
+    color: white;
+    width: 150px;
+    height: 440px;
+    margin-right: 4px;
+}
+
+.message-container {
+    height: 400px;
+    background-color: #ccf2f4;
+    overflow: auto;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+
+.user-message {
+    text-align: right;
+    padding-right: 5px;
+    font-size: 18px;
+    color: black;
+}
+
+.message {
+    display: inline-flex;
+    margin: 0px auto 0px auto;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    background-color: #51c2d5;
+    border-radius: 20px;
+    margin-top: 3px;
+}
+
+.from-user {
+    font-size: small;
+    margin-bottom: 3px;
+    margin-right: 5px;
+}
+
+.btn-leave-room {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 0 10px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.send-message-box{
+    margin-top: -10px;
+    display: flex;
+}
+input{
+    border-radius: 6px;
+}
+button{
+    margin: 10px 0;
+    border: 1px solid #dedede;
+    border-radius: 6px;
+    background-color: blue;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+button:disabled{
+    background-color: #fff;
+    color: #dedede;
+}
