@@ -12,7 +12,7 @@ function Chat() {
     const joinRoom = async (user, room) => {
         try {
             const connection = new HubConnectionBuilder()
-                .withUrl("https://localhost:7251/chat")
+                .withUrl("http://localhost:8083/chat")
                 .configureLogging(LogLevel.Information)
                 .build();
 
